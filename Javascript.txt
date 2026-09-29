@@ -1,0 +1,37 @@
+// Rolagem suave ao clicar nos links do menu
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const sectionId = this.textContent.toLowerCase();
+    const section = document.querySelector("." + sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+// Animação nos cards de serviços e depoimentos
+const cards = document.querySelectorAll(".card");
+cards.forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "scale(1.05)";
+    card.style.transition = "transform 0.3s";
+  });
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+  });
+});
+
+// Validação simples do formulário de e-mail no rodapé
+const button = document.querySelector("footer button");
+button.addEventListener("click", () => {
+  const emailInput = document.querySelector("footer input[type='email']");
+  const email = emailInput.value.trim();
+
+  if (email === "" || !email.includes("@")) {
+    alert("Por favor, insira um e-mail válido.");
+  } else {
+    alert("Obrigado por se cadastrar! Você receberá nossas ofertas em breve.");
+    emailInput.value = "";
+  }
+});

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autopeças Brasil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Autopeças Brasil">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar produtos...">
+    </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Serviços</a>
+      <a href="#">Depoimentos</a>
+      <a href="#">História</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre a Empresa</h2>
+    <img src="fachada.jpg" alt="Foto da loja">
+    <p>Desde 1990 oferecendo qualidade e confiança em autopeças para todo o Brasil.</p>
+    <div class="timeline">
+      <div><strong>1990</strong><br>Fundação</div>
+      <div><strong>2015</strong><br>Expansão</div>
+      <div><strong>2023</strong><br>Loja Online</div>
+    </div>
+  </section>
+
+  <section class="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="oleo.png" alt="Troca de Óleo">
+        <h3>Troca de Óleo</h3>
+        <p>Serviço rápido e seguro</p>
+      </div>
+      <div class="card">
+        <img src="balanceamento.png" alt="Balanceamento">
+        <h3>Balanceamento</h3>
+        <p>Precisão para seu veículo</p>
+      </div>
+      <div class="card">
+        <img src="bateria.png" alt="Bateria">
+        <h3>Bateria</h3>
+        <p>Instalação e teste gratuito</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="cards">
+      <div class="card">
+        <blockquote>“Excelente atendimento!”</blockquote>
+        <p>— João M.</p>
+      </div>
+      <div class="card">
+        <blockquote>“Peças originais e entrega rápida.”</blockquote>
+        <p>— Carla S.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contato">
+      <p><strong>Endereço:</strong> Rua das Oficinas, 123 — Vila Velha/ES</p>
+      <p><strong>Tel:</strong> (27) 3333‑4444</p>
+    </div>
+    <div class="cadastro">
+      <p>Cadastre-se para receber ofertas:</p>
+      <input type="email" placeholder="Seu e-mail">
+      <button>Enviar</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
