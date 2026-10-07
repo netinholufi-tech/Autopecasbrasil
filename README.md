@@ -64,3 +64,14 @@ Se você deseja clonar o repositório para realizar modificações na sua máqui
 
 ---
 🔧 Desenvolvido por [netinholufi-tech](https://github.com).
+<div style="position: fixed; top: 0; left: 0; width: 100%; height: 4px; background: #e0e0e0; z-index: 9999;">
+  <div id="reading-line" style="width: 0%; height: 100%; background: #d93838; transition: width 0.1s ease;"></div>
+</div>
+<script>
+  window.addEventListener('scroll', () => {
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('reading-line').style.width = scrolled + '%';
+  });
+</script>
